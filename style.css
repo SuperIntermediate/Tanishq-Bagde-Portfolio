@@ -300,14 +300,14 @@ ul {
 
 .prev {
   position: relative;
-  right: 450px;
+  right: 500px;
   bottom: 220px;
   transform: translateY(-50%);
 }
 
 .next {
   position: relative;
-  left: 450px;
+  left: 500px;
   bottom: 220px;
   transform: translateY(-50%);
 }
