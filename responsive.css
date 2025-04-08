@@ -1,0 +1,138 @@
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  #hero {
+    height: 70vh;
+    padding: 20px;
+    background-image: url(Computer.jpg);
+  }
+
+  .hero-content {
+    flex-direction: column; 
+    padding: 20px;
+    height: auto;
+  }
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
+      -1px 1px 0px black;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    margin: 5px 0;
+  }
+
+  .project-carousel {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .carousel-caption p {
+    display: none;  
+  }
+  .prev {
+    position: relative;
+    right: 90px;
+    top: 11px;
+    transform: translateY(-50%);
+  }
+  .next {
+    position: relative;
+    left: 90px;
+    top: 11px;
+    transform: translateY(-50%);
+  }
+  .carousel-item {
+    width: 90%;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .carousel-item:hover img {
+    transform: scale(1.05);
+  }
+  #contact form {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets and Small Desktops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #hero {
+    height: 80vh;
+    background-image: url(TabletImg.jpg);
+  }
+
+  #hero h1 {
+    font-size: 2.8rem;
+  }
+
+  #hero p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black,
+      -1px 1px 0px black;
+      color: #ccc;
+  }
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+  nav ul li a:hover {
+    color: #f76c6c;
+    transform: scale(1.1);
+  }
+  .carousel-item {
+    width: 60%;
+  }
+  .prev {
+    position: relative;
+    right: 275px;
+    bottom: 150px;
+    transform: translateY(-50%);
+  }
+  .next {
+    position: relative;
+    left: 275px;
+    bottom: 150px;
+    transform: translateY(-50%);
+  }
+  .carousel-item:hover img {
+    transform: scale(1.05);
+  }
+  .about-subsection {
+    margin: 20px auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}

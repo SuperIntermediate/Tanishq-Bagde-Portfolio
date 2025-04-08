@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Tanishq Bagde, Full Stack Web Developer. Learn more about my skills, projects, and contact me for collaborations."
+    />
+    <meta
+      name="keywords"
+      content="Tanishq Bagde, Full Stack Developer, Web Developer, Portfolio"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tanishq Bagde Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Tanishq Bagde</div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="myImg.JPG" alt="My Image" />
+        </div>
+        <div>
+        <h1>Hello, I'm Tanishq Bagde</h1>
+        <p>
+          I am a passionate Full stack web developer with a knack for creating
+          beautiful, user-friendly websites.
+        </p>
+        <a href="#about" class="cta-btn">Learn More</a>
+      </div>
+    </div>
+    </section>
+
+    <section id="about">
+      <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+          I specialize in front-end development and have experience with HTML,
+          CSS, JavaScript, and frameworks like React and Vue. I am always eager
+          to learn new technologies and contribute to innovative projects.
+        </p>
+
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Python</div>
+          <div class="skill">MySQL</div>
+        </div>
+
+        
+        <div class="about-subsection">
+          <h3>Education</h3>
+          <p><strong>Bachelor's in Comuter Science</strong></p>
+          <p>- Rashtrasant Tukadoji Maharaj Nagpur University, 2023</p>
+          <p>
+            I have gained a solid foundation in computer science principles,
+            algorithms, and software development practices during my
+            undergraduate studies.
+          </p>
+        </div>
+
+        <div class="about-subsection">
+          <h3>Hobbies</h3>
+          <p>When I'm not coding, I enjoy :</p>
+          <ul>
+            <li>Dancing</li>
+            <li>Photography and nature walks</li>
+            <li>Exploring new technologies and open-source contributions</li>
+          </ul>
+        </div>
+        <div class="download-resume">
+          <a href="Tanishq_bagde_CV.pdf" download class="cta-btn">Download Resume (PDF)</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-carousel">
+        <div class="carousel-item">
+          <img src="VirtualPet.png" alt="Virtual Pet Simulator Project img" />
+          <div class="carousel-caption">
+            <h3>Virtual Pet Simulator Game</h3>
+            <p>Virtual Pet Simulator lets you adopt, care for, and customize your own pet. Feed, play, and explore together in a fun, interactive world!</p>
+            <a
+              href="https://superintermediate.github.io/Virtual-Pet-SimulatorGame.com/"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Chat-App.png" alt="Chat Application img" />
+          <div class="carousel-caption">
+            <h3>Chat Application</h3>
+            <p>
+              Chat App is a fast, user-friendly platform for real-time text-based conversations.</p>
+            <a
+              href="https://simple-chat-server-whisper.onrender.com"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ToDoList.png" alt="ToDo's List img" />
+          <div class="carousel-caption">
+            <h3>ToDo's List</h3>
+           <p>To-Do List is a simple, easy-to-use app that helps you organize tasks, set priorities, and stay productive.</p>
+            <a
+              href="https://superintermediate.github.io/TODO-sList.com/ToDoList.html"
+              target="_blank"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to work together, feel free to reach out to me through
+          email or social media.
+        </p>
+        <a href="mailto:tanishqthisside860@gmail.com" class="fab">📧</a>
+
+        <form id="contactForm" onsubmit="return validationForm()">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your Name here..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter your Email here..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Enter your Subject here..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Enter your Message here..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Tanishq Bagde. All rights reserved.</p>
+    </footer>
+    <script>
+      // JavaScript validation for the contact form
+
+      function validationForm() {
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let subject = document.getElementById("subject");
+        let message = document.getElementById("message");
+
+        if (name === "" || email === "" || subject === "" || message === "") {
+          alert("All fields must be filled out.");
+          return false;
+        }
+        return true;
+      }
+      // Smooth Scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
